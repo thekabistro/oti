@@ -23,7 +23,8 @@ taxonomies = [
 
 sam_menu = [
     { text = "posts", link = "/posts" },
-    { text = "about", link = "/about" }
+    { text = "about", link = "/about" },
+    { text = "resources", link = "/resources" }
 ]
 
 show_word_count = true
