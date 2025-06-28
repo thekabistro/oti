@@ -1,12 +1,12 @@
 # The URL the site will be built for
 base_url = "https://ontheimmeasurable.com"
-theme = "sam"
+theme = "bistro"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
 [markdown]
 # Whether to do syntax highlighting
@@ -24,8 +24,12 @@ taxonomies = [
 sam_menu = [
     { text = "posts", link = "/posts" },
     { text = "about", link = "/about" },
-    { text = "resources", link = "/resources" }
+    { text = "resources", link = "/resources" },
+    { text = "subscribe", link = "/subscribe" }
 ]
+
+subscribe_url = "https://subscribe.ontheimmeasurable.com"
+
 
 show_word_count = true
 show_reading_time = true
