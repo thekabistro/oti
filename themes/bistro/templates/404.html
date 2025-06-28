@@ -11,9 +11,11 @@
 {% endblock title %}
 
 {% block content %}
-<p>
-    Oops, looks like this content is not available.
-    <br>
-    <a href="{{ config.base_url }}">{{ config.extra.home | default(value="home") }}</a>
-    </p>
+    <div class="page-content">
+        <p>
+        Oops, looks like this content is not available.
+        <br>
+        <a href="{{ config.base_url }}">{{ config.extra.home | default(value="home") }}</a>
+        </p>
+    </div>
 {% endblock content %}
