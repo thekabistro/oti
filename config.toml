@@ -22,10 +22,9 @@ taxonomies = [
 ]
 
 sam_menu = [
-    { text = "posts", link = "/posts" },
+    { text = "thoughts", link = "/thoughts" },
     { text = "about", link = "/about" },
     { text = "resources", link = "/resources" },
-    { text = "subscribe", link = "/subscribe" }
 ]
 
 subscribe_url = "https://subscribe.ontheimmeasurable.com"
