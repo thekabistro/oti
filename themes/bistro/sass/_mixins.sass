@@ -1,0 +1,42 @@
+// Horizontal rule styling
+=skinny-hr
+  margin: 1.5rem 0
+  background-color: transparent
+  width: 50%
+  border-style: solid
+  border-width: 1px
+  border-color: rgba($black, 0.3)
+
+// Transition effect
+=ease($time)
+  transition: $time ease
+
+// Box shadow
+=subtle-shadow
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
+
+// Focus outline for accessibility
+=focus-outline
+  outline: 2px solid $links
+  outline-offset: 2px
+
+// Responsive breakpoints
+=mobile
+  @media screen and (max-width: 736px)
+    @content
+
+=tablet
+  @media screen and (min-width: 737px) and (max-width: 1200px)
+    @content
+
+// Link styling
+=styled-link
+  color: $links
+  text-decoration: none
+  border-bottom: 2px solid $links
+  +ease(0.3s)
+  &:hover
+    color: $links-hover
+    border-bottom-color: $links-hover
+  &:focus
+    +focus-outline

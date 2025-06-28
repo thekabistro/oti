@@ -1,0 +1,40 @@
+// Custom color for sections
+$offwhite: #EEEDDD
+
+// Sections navigation styling
+#sections
+  align-items: flex-start
+  font-size: 1.2rem
+  font-weight: 500
+  margin: 1rem 0 2rem
+  width: 100%
+  text-align: left
+  
+  a
+    color: $links
+    border-bottom: none
+    margin: 0 0.8rem
+    padding: 0.3rem 0.5rem
+    border-radius: 3px
+    +ease(0.3s)
+    
+    &:hover
+      color: $links-hover
+      background-color: rgba($black, 0.05)
+    
+    &:focus
+      +focus-outline
+
+.section-menu
+  text-align: left
+  margin-bottom: 1rem
+  
+  a
+    color: $links
+    border-bottom: none
+    margin-right: 0.8rem
+    padding: 0.3rem 0
+    +ease(0.3s)
+    
+    &:hover
+      color: $links-hover
