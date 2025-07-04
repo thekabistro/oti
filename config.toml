@@ -27,7 +27,7 @@ sam_menu = [
     { text = "resources", link = "/resources" },
 ]
 
-subscribe_url = "https://subscribe.ontheimmeasurable.com"
+subscribe_url = "https://subscription.ontheimmeasurable.com"
 site_title = "On the Immeasurable"
 
 show_word_count = true
