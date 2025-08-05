@@ -42,7 +42,7 @@ body
   font-size: $body-size
   font-family: $font
   color: $body-text
-  line-height: 1.6
+  line-height: 1.4
   text-shadow: none
   display: flex
   flex-direction: column
@@ -68,13 +68,13 @@ h1, h2, h3, h4, h5, h6
   text-align: left
 
 h1
-  font-size: 2.5rem
+  font-size: 2.2rem
 
 h2
-  font-size: 2rem
+  font-size: 1.8rem
 
 h3
-  font-size: 1.75rem
+  font-size: 1.5rem
 
 // Lists
 li
@@ -88,7 +88,7 @@ ul
 
 // Text elements
 p
-  margin-bottom: 1.5rem
+  margin-bottom: 1.2rem
   line-height: 1.6
   opacity: 0.9
 
@@ -116,16 +116,19 @@ button
     +focus-outline
 
 // Horizontal rule
-hr
-  +skinny-hr
+.divider
+  +full-width-hr
   opacity: 0.3
+
+.divider
+  margin: 1rem 0
 
 // Layout containers
 .wrap
   margin: 0 auto
-  margin-top: 2rem
-  width: 45%
-  max-width: 800px
+  margin-top: 1rem
+  width: 90%
+  max-width: 768px
   padding: 2rem
   +mobile
     padding: 1.5rem
@@ -171,6 +174,7 @@ hr
   padding-top: 2rem
   padding-bottom: 2rem
   text-align: center
+  font-size: 0.8rem
   a
     margin: 0 0.5rem
 
@@ -238,7 +242,7 @@ hr
 
 // Content section
 #content
-  margin: 2rem 0
+  margin: 0
   line-height: 1.8
   width: 100%
   max-width: 800px
@@ -262,12 +266,12 @@ hr
     margin-bottom: 1.5em
   
   & h1, h2, h3
-    margin: 1.5em 0 0.8em
+    margin: 1.2em 0 0.6em
     text-align: left
   
   & p
-    margin-bottom: 1.8em
-    line-height: 1.7
+    margin-bottom: 1.2em
+    line-height: 1.6
     opacity: 0.9
     letter-spacing: 0.01em
     text-align: left
@@ -339,14 +343,14 @@ hr
   & li
     line-height: 1.6
     padding-left: 0.4rem
-    margin-bottom: 0.5rem
+    margin-bottom: 0.25rem
     
     &:last-child
       margin-bottom: 1rem
   
   & ul
     list-style: disc outside
-    padding-left: 2rem
+    padding-left: 1.5rem
     margin-bottom: 1.5rem
   
   & ol
@@ -369,6 +373,11 @@ hr
       
       & a
         color: $links
+
+.page-meta
+  font-size: 0.8rem
+  opacity: 0.4
+  margin-bottom: 1rem
 
 // Grid layout
 .grid

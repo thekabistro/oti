@@ -13,9 +13,11 @@
         <div class="section" id="title">
             {% block title %}{% endblock title %}
         </div>
+        {% if self.sections | trim %}
         <div class="section" id="sections">
             {% block sections %}{% endblock sections %}
         </div>
+        {% endif %}
         <div class="section" id="content">
             {% block content %}{% endblock content %}
         </div>

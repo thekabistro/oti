@@ -13,6 +13,7 @@
 {% block content %}
     <div class="page-content">
     {% if not page.extra.no_header %}
+        <div class="page-meta">
         {% if page.date %}
             {{ macros::format_date(date=page.date) }}
         {% endif %}
@@ -31,9 +32,10 @@
                 {{ page.reading_time }} min
             {% endif %}
         {% endif %}
+        </div>
         {% if page.taxonomies.tags %}
             <div class="tag-container">
-                Tags :&nbsp;
+                Tags :&nbsp;
                 {% for tag in page.taxonomies.tags %}
                     <span class="tag">
                         <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">
@@ -55,7 +57,7 @@
                 {% endfor %}
             </div>
         {% endif %}
-        <hr/>
+        <hr class="divider"/>
     {% endif %}
     {{ page.content | safe }}
     </div>
