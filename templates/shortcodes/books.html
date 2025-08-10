@@ -1,0 +1,24 @@
+{% set sections = page.extra.book_sections %}
+<div class="book-sections">
+  {% for section in sections %}
+  <div class="book-section">
+    <h3>{{ section.title }}</h3>
+    <div class="books">
+      {% for book in section.books %}
+      <div class="book">
+        <div class="book-cover">
+          <a href="{{ book.url }}" target="_blank">
+            <img src="{{ get_url(path=book.cover) }}" alt="{{ book.title }} cover" />
+          </a>
+        </div>
+        <div class="book-info">
+          <a href="{{ book.url }}" target="_blank"><strong>{{ book.title }}</strong></a>
+          <p>by {{ book.author }}</p>
+          <p>{{ book.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

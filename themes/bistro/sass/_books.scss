@@ -1,0 +1,67 @@
+.book-sections {
+  margin-top: 2rem;
+}
+
+.book-section {
+  margin-bottom: 2rem;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .books {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -1.5rem; // Negative margin as requested
+  }
+
+  .book {
+    display: flex;
+    align-items: center; // Vertically center cover and info
+    text-align: left; // Ensure text alignment is left
+    border-bottom: 1px solid rgba($black, 0.1); // Subtle horizontal rule
+
+    &:last-child {
+      border-bottom: none; // No border after the last book
+      margin-bottom: 0; // No margin after the last book
+    }
+
+    .book-cover {
+      flex-shrink: 0; // Prevent shrinking
+      width: 100px; // Fixed width for the cover container
+      margin-right: 1rem; // Space between cover and info
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block; // Remove extra space below image
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .book-info {
+      flex-grow: 1; // Allow info to take remaining space
+
+      a {
+        font-weight: bold;
+        text-decoration: none;
+        color: $links;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color 0.3s ease;
+
+        &:hover {
+          border-bottom-color: $links;
+        }
+      }
+
+      p {
+        margin: 0; // Remove all default margins from paragraphs
+        font-size: 0.9rem;
+        opacity: 0.8;
+      }
+    }
+  }
+}
